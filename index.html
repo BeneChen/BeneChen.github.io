@@ -1,55 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chi Bene Chen</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      max-width: 850px;
+      margin: 60px auto;
+      padding: 0 25px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+      font-size: 36px;
+    }
+
+    h2 {
+      margin-top: 45px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .links {
+      margin-top: 15px;
+    }
+
+    .links a {
+      margin-right: 15px;
+    }
+
+    .publication {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
 </head>
+
 
 <body>
 
-    <h1>Your Name</h1>
+  <div class="header">
 
-    <p>
-        Master's Student in Computer Science<br>
-        XXX University
-    </p>
+    <img
+      src="avatar.png"
+      alt="Chi Bene Chen"
+      class="profile-photo"
+    >
 
-    <p>
-        Email: yourname@example.com |
-        <a href="https://github.com/你的用户名">GitHub</a>
-    </p>
+    <div>
 
-    <hr>
+      <h1>Chi Bene Chen</h1>
 
-    <h2>About Me</h2>
+      <p>
+        PhD Student in Automation<br>
+        Tsinghua University
+      </p>
 
-    <p>
-        I am a master's student at XXX University.
-        My research interests include machine learning,
-        artificial intelligence, and XXX.
-    </p>
+      <div class="links">
 
-    <h2>Research Interests</h2>
+        <a href="https://github.com/BeneChen">
+          GitHub
+        </a>
 
-    <ul>
-        <li>Machine Learning</li>
-        <li>Large Language Models</li>
-        <li>Natural Language Processing</li>
-    </ul>
+        <!-- 后面有 Google Scholar 后再加 -->
 
-    <h2>Publications</h2>
+        <!--
+        <a href="YOUR_GOOGLE_SCHOLAR_URL">
+          Google Scholar
+        </a>
+        -->
 
-    <p>
-        Coming soon.
-    </p>
+        <!-- 后面上传 CV 后再加 -->
 
-    <h2>Education</h2>
+        <!--
+        <a href="cv.pdf">
+          CV
+        </a>
+        -->
 
-    <p>
-        <strong>XXX University</strong><br>
-        M.S. in Computer Science, 2024–Present
-    </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <h2>About Me</h2>
+
+  <p>
+    I am a PhD student in Automation at Tsinghua University,
+    supervised by Prof. Gao Huang and Prof. Shiji Song.
+    My research interests focus on embodied intelligence.
+  </p>
+
+
+  <h2>Research Interests</h2>
+
+  <ul>
+    <li>Embodied Intelligence</li>
+  </ul>
+
+
+  <h2>Publications</h2>
+
+  <div class="publication">
+
+    <strong>MOVE</strong>
+
+    <br>
+
+    <span>
+      Publication information coming soon.
+    </span>
+
+  </div>
+
+
+  <h2>Education</h2>
+
+  <p>
+    <strong>Tsinghua University</strong><br>
+    PhD in Automation
+  </p>
+
+  <p>
+    <strong>King's College London</strong><br>
+    MSc in Computer Science
+  </p>
+
 
 </body>
+
 </html>

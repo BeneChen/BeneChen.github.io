@@ -1,170 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Chi Bene Chen</title>
-
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #222;
-      max-width: 850px;
-      margin: 60px auto;
-      padding: 0 25px;
-    }
-
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      margin-bottom: 50px;
-    }
-
-    .profile-photo {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-
-    h1 {
-      margin-bottom: 5px;
-      font-size: 36px;
-    }
-
-    h2 {
-      margin-top: 45px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 6px;
-    }
-
-    a {
-      color: #1772d0;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .links {
-      margin-top: 15px;
-    }
-
-    .links a {
-      margin-right: 15px;
-    }
-
-    .publication {
-      margin-top: 20px;
-    }
-
-    @media (max-width: 600px) {
-      .header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chi Bene Chen is a PhD student in Automation at Tsinghua University, researching embodied intelligence, robot learning, and robotic manipulation.">
+  <meta name="theme-color" content="#fefffe">
+  <title>Chi Bene Chen | Tsinghua University</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
 </head>
-
-
 <body>
-
-  <div class="header">
-
-    <img
-      src="avatar.png"
-      alt="Chi Bene Chen"
-      class="profile-photo"
-    >
-
-    <div>
-
-      <h1>Chi Bene Chen</h1>
-
-      <p>
-        PhD Student in Automation<br>
-        Tsinghua University
-      </p>
-
-      <div class="links">
-
-        <a href="https://github.com/BeneChen">
-          GitHub
-        </a>
-
-        <!-- 后面有 Google Scholar 后再加 -->
-
-        <!--
-        <a href="YOUR_GOOGLE_SCHOLAR_URL">
-          Google Scholar
-        </a>
-        -->
-
-        <!-- 后面上传 CV 后再加 -->
-
-        <!--
-        <a href="cv.pdf">
-          CV
-        </a>
-        -->
-
-      </div>
-
+  <a class="skip-link" href="#about">Skip to content</a>
+  <header class="site-header">
+    <div class="navigation">
+      <a class="brand" href="#">Chi Bene Chen</a>
+      <nav aria-label="Main navigation">
+        <a class="nav-link active" href="#about" aria-current="location">About</a>
+        <a class="nav-link" href="#publications">Publications</a>
+        <a class="nav-link" href="#education">Education</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" hidden>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg>
+      </button>
     </div>
+  </header>
 
-  </div>
+  <main class="page">
+    <aside class="profile" aria-label="Profile and research interests">
+      <img class="avatar" src="avatar.png" width="256" height="256" alt="Illustrated portrait of Chi Bene Chen">
+      <h1>Chi Bene Chen</h1>
+      <p class="role">PhD Student in Automation</p>
+      <p class="affiliation">Tsinghua University</p>
+      <a class="github" href="https://github.com/BeneChen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7M15 22v-3.9a3.4 3.4 0 0 0-.9-2.7c3-.3 6.2-1.5 6.2-6.8A5.3 5.3 0 0 0 18.8 5a4.9 4.9 0 0 0-.1-3.6S17.5 1 15 2.7a13.4 13.4 0 0 0-6 0C6.5 1 5.3 1.4 5.3 1.4A4.9 4.9 0 0 0 5.2 5a5.3 5.3 0 0 0-1.5 3.6c0 5.3 3.2 6.5 6.2 6.8a3.4 3.4 0 0 0-.9 2.7V22"/></svg>
+        GitHub
+      </a>
+      <div class="interests">
+        <h2>Research Interests</h2>
+        <ul><li>Embodied Intelligence</li><li>Robot Learning</li><li>Robotic Manipulation</li></ul>
+      </div>
+    </aside>
 
+    <div class="content">
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>I am a PhD student in Automation at Tsinghua University, supervised by <strong class="accent">Prof. Gao Huang</strong> and <strong class="accent">Prof. Shiji Song</strong>.</p>
+        <p>Previously, I obtained an MSc in Computer Science from King’s College London.</p>
+        <p>My research interests center on embodied intelligence, robot learning, and robotic manipulation.</p>
+      </section>
 
-  <h2>About Me</h2>
+      <section id="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title">Publications</h2>
+        <article class="publication card">
+          <p class="venue">IEEE ICRA 2026</p>
+          <h3><a href="https://arxiv.org/abs/2512.04813">MOVE: A Simple Motion-Based Data Collection Paradigm for Spatial Generalization in Robotic Manipulation</a></h3>
+          <p class="authors">Huanqian Wang<sup>*</sup>, <strong>Chi Bene Chen<sup>*</sup></strong>, Yang Yue, Danhua Tao, Tong Guo, Shaoxuan Xie, Denghang Huang, Shiji Song, Guocai Yao, Gao Huang</p>
+          <p class="contribution"><sup>*</sup> Equal contribution (co-first authors)</p>
+          <div class="paper-links" aria-label="Publication resources">
+            <a href="https://arxiv.org/abs/2512.04813">Paper <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/lucywang720/MOVE">Code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="publication card">
+          <p class="venue">IEEE ICRA 2024</p>
+          <h3><a href="https://doi.org/10.1109/ICRA57147.2024.10611081">Multi-class Road Defect Detection and Segmentation using Spatial and Channel-wise Attention for Autonomous Road Repairing</a></h3>
+          <p class="authors">Jongmin Yu, <strong>Chi Bene Chen</strong>, Sebastiano Fichera, Paolo Paoletti, Devansh Mehta, Shan Luo</p>
+          <p class="contribution">Published as Chen Bene Chi.</p>
+          <div class="paper-links" aria-label="Publication resources">
+            <a href="https://doi.org/10.1109/ICRA57147.2024.10611081">Paper <span aria-hidden="true">↗</span></a>
+            <a href="https://arxiv.org/abs/2402.04064">arXiv <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="publication card">
+          <p class="venue">IEEE/CVF CVPR Workshops 2025</p>
+          <h3><a href="https://openaccess.thecvf.com/content/CVPR2025W/PVUW/html/Yu_Adversarially_Domain-adaptive_Latent_Diffusion_for_Unsupervised_Semantic_Segmentation_CVPRW_2025_paper.html">Adversarially Domain-adaptive Latent Diffusion for Unsupervised Semantic Segmentation</a></h3>
+          <p class="authors">Jongmin Yu, Zhongtian Sun, <strong>Chi Bene Chen</strong>, Jinhong Yang, Shan Luo</p>
+          <div class="paper-links" aria-label="Publication resources">
+            <a href="https://openaccess.thecvf.com/content/CVPR2025W/PVUW/html/Yu_Adversarially_Domain-adaptive_Latent_Diffusion_for_Unsupervised_Semantic_Segmentation_CVPRW_2025_paper.html">Paper <span aria-hidden="true">↗</span></a>
+            <a href="https://arxiv.org/abs/2412.16859">arXiv <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </section>
 
-  <p>
-    I am a PhD student in Automation at Tsinghua University,
-    supervised by Prof. Gao Huang and Prof. Shiji Song.
-    My research interests focus on embodied intelligence.
-  </p>
-
-
-  <h2>Research Interests</h2>
-
-  <ul>
-    <li>Embodied Intelligence</li>
-  </ul>
-
-
-  <h2>Publications</h2>
-
-  <div class="publication">
-
-    <strong>MOVE</strong>
-
-    <br>
-
-    <span>
-      Publication information coming soon.
-    </span>
-
-  </div>
-
-
-  <h2>Education</h2>
-
-  <p>
-    <strong>Tsinghua University</strong><br>
-    PhD in Automation
-  </p>
-
-  <p>
-    <strong>King's College London</strong><br>
-    MSc in Computer Science
-  </p>
-
-
+      <section id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <div class="education-entry">
+          <div><h3>Tsinghua University</h3><p>PhD in Automation</p></div>
+          <span class="education-status">Current</span>
+        </div>
+        <div class="education-entry">
+          <div><h3>King’s College London</h3><p>MSc in Computer Science</p></div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer><span>Chi Bene Chen · Tsinghua University</span><span>Design adapted from <a href="https://github.com/xyjoey/PRISM">PRISM</a></span></footer>
 </body>
-
 </html>
